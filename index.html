@@ -1,0 +1,122 @@
+<html>
+<title>W3.CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body bgcolor=>
+	<img src="fastfood.png" style=" width:100%; height: 40%;">
+	<div class="w3-bar w3-brown">
+		<button class="w3-bar-item w3-button" onclick="openMakanan('Home')">Home</button>
+ 		<button class="w3-bar-item w3-button" onclick="openMakanan('Profile')">Profile</button>
+		<button class="w3-bar-item w3-button" onclick="openMakanan('Burger')">Burger</button>
+ 		<button class="w3-bar-item w3-button" onclick="openMakanan('Pizza')">Pizza</button>
+ 		<button class="w3-bar-item w3-button" onclick="openMakanan('Donat')">Donat</button>
+ 		<button class="w3-bar-item w3-button" onclick="openMakanan('Hotdog')">Hotdog</button>
+		<button class="w3-bar-item w3-button" onclick="openMakanan('Sushi')">Sushi</button>
+		<button class="w3-bar-item w3-button" onclick="openMakanan('Kentang Goreng')">Kentang Goreng</button>
+	</div>
+	
+	<div id="Home" class="w3-container makanan w3-animate-left" style="display:none">
+ 		<h3>Home</h3>
+ 		<center><p><h1>Belajar HTML dan CSS</h1>
+ 		<br>Mata Kuliah Pemrograman WEB 1</br>
+ 		<br>Universitas Komputer Indonesia</br>
+ 		</center></p>
+	</div>
+	
+	<div id="Profile" class="w3-container makanan w3-animate-top" style="display:none">
+ 		<h2>Profile</h2>
+ 		<center><table>
+			<img src="fotosy.jpg" width="300px">
+			<br><hr>
+			<tr><td>NIM<td>  : 10121050
+			<tr><td>Nama<td> : Rio Christian Cesar Sihombing
+			<tr><td>Kelas<td>: IF-2
+		</center></table>
+	</div>
+	
+	<div id="Burger" class="w3-container makanan w3-animate-fading" style="display:none">
+		<br>
+		<center>
+			<img src="burger.jpg" width="400px">
+		</center>
+		<br>
+		<strong>BURGER</strong
+		<br>
+ 		<p align="justify">
+		Hamburger (atau sering kali disebut dengan burger) adalah sejenis makanan berupa roti berbentuk bundar yang diiris dua dan 
+		di tengahnya diisi dengan patty yang biasanya diambil dari daging, kemudian sayur-sayuran berupa selada, tomat dan bawang bombai.
+		Sebagai sausnya, burger diberi berbagai jenis saus seperti mayones, saus tomat dan sambal serta mustard.
+		</p>
+	</div>
+	
+	<div id="Pizza" class="w3-container makanan w3-animate-bottom" style="display:none">
+ 		<br>
+		<center>
+			<img src="pizza.jpg" width="400px">
+		</center>
+		<br>
+		<strong>PIZZA</strong
+		<br>
+ 		<p>Pizza adalah roti berbentuk bundar pipih yang dipanggang di oven kemudian dilumuri saus tomat serta keju mozarella. Biasanya pizza
+		juga ditambahkan bahan-bahan topping sesuai selera seperti sosis, daging, paprika, jamur, dan lain-lain.</p>
+	</div>
+	
+	<div id="Donat" class="w3-container makanan w3-animate-top" style="display:none">
+ 		<br>
+		<center>
+			<img src="donat.jpg" width="400px">
+		</center>
+		<br>
+		<strong>DONAT</strong
+		<br>
+ 		<p>Donat adalah penganan yang digoreng, dibuat dari adonan tepung terigu, gula pasir, kuning telur, ragi roti, dan mentega. Donat yang
+		paling umum adalah donat dengan bentuk seperti cincin dan ada lubang di tengahnya, biasanya ditaburi dengan mesis atau gula halus.</p>
+	</div>
+	
+	<div id="Hotdog" class="w3-container makanan w3-animate-zoom" style="display:none">
+		<br>
+		<center>
+			<img src="hotdog.jpg" width="400px">
+		</center>
+		<br>
+		<strong>HOT DOG</strong
+		<br>
+		<p>Hot dog adalah suatu jenis sosis yang dimasak atau diasapi dan memiliki tekstur yang lebih halus serta rasa yang lebih lembut dan basah daripada kebanyakan sosis.</p>
+	</div>
+	
+	<div id="Sushi" class="w3-container makanan w3-animate-left" style="display:none">
+		<br>
+		<center>
+			<img src="sushi.jpg" width="400px">
+		</center>
+		<br>
+		<strong>SUSHI</strong
+		<br>
+ 		<p>Sushi adalah makanan Jepang yang terdiri dari nasi yang dikepal bersama lauk berupa makanan laut, daging, sayuran yang mentah atau sudah 
+		dimasak kemudian dicocol dengan kecap dan wasabi.</p>
+	</div>
+	
+	<div id="Kentang Goreng" class="w3-container makanan w3-animate-right" style="display:none">
+		<br>
+		<center>
+			<img src="kentang.jpg" width="400px">
+		</center>
+		<br>
+		<strong>KENTANG GORENG</strong
+		<br>
+		<p>Kentang goreng adalah hidangan yang dibuat dari potongan-potongan kentang yang digoreng dalam minyak goreng panas. Di dalam menu rumah-rumah makan,
+		kentang goreng yang dipotong panjang-panjang dan digoreng dalam keadaan terendam di dalam minyak goreng panas disebut French fries.</p>
+	</div>
+	
+	<script>
+		function openMakanan(namaMakanan) {
+ 		var i;
+ 		var x = document.getElementsByClassName("makanan");
+ 		for (i = 0; i < x.length; i++) {
+ 		x[i].style.display = "none";
+ 		}
+ 		document.getElementById(namaMakanan).style.display = "block";
+		}
+	</script>
+</body>
+</html>
